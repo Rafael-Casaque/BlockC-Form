@@ -8,3 +8,5 @@
 
 <p>Imagem do projeto deenvolvido</p>
 <img src="https://user-images.githubusercontent.com/72985101/199098740-51581757-144d-455c-9b3e-dfbede88cffe.png">
+
+<h5>Importante: para fins de estudos, estou refazendo essa aplicação com React.js, disponível no diretório 'signup'</h5>
