@@ -17,9 +17,28 @@ const buttonStyle = {
     marginTop: '5%',
 }
 
+const validarForm = (e)=>{
+    e.preventDefault()
+    document.querySelectorAll("input").forEach(element => {
+        if(element.value.length === 0){
+            alert(`O campo ${element.getAttribute("name")} está vazio!`)
+            return false
+        }                
+    })
+}
+
+const validarEmail = (e)=>{
+    e.preventDefault()
+    const emailRegex = /^[\w._-]+@[\w._-]+\.[a-z]+/gi;
+    if(!emailRegex.test(document.querySelector("input[name='email']").value)){
+        alert("Parece que isso não é um email")
+        return false
+    }    
+}
+
 export default function Formulario() {
     return(
-        <form style={formStyle}>
+        <form style={formStyle} onSubmit={(e)=>{if(validarForm(e)!==false && validarEmail(e)!==false){document.querySelectorAll("input").forEach(element => {element.value=''})}}}>
             <Campos for="nome" name="nome" type="text" label="Nome Completo"/>
             <Campos for="email" name="email" type="text" label="E-mail"/>
             <Campos for="senha" name="senha" type="password" label="Senha"/>
