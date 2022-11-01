@@ -1,6 +1,6 @@
 <h1>Projeto desenvolvido para etapa de processo seletivo</h1>
 
-<a href="https://rrc-blockc.web.app">Acessar o site feito com JavaScript nativo</a>
+<a href="https://rrc-blockc.web.app">Acessar o site feito com JavaScript nativo</a> <br>
 <a href="https://rrc-blockc-react.web.app/">Acessar o site feito com React.js</a>
 
 <h3>O projeto foi hospedado utilizando o Google Firebase Hosting. Utilizei essa plataforma pelo fato de já ter tido muito contato, tanto para hospedagem de arquivos estáticos, quanto para hospedagem de API desenvolvidas com Node.js + Express.js.</h3>
